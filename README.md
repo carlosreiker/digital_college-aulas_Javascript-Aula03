@@ -33,25 +33,35 @@ http://localhost:8000/SORT%20NUMBERS/sort-number.html
 
 > Observação: o espaço no nome da pasta `SORT NUMBERS` é codificado como `%20` na URL.
 
+## Demo (GitHub Pages)
+
+- Uma versão hospedada deste projeto está disponível em GitHub Pages:
+
+	https://carlosreiker.github.io/digital_college-aulas_Javascript/
+
+	Abra o link acima para ver o conteúdo publicado sem precisar iniciar um servidor local.
+
 ## Detalhes do Sorteador de Números
 
 - Digite um número inteiro entre `0` e `9` e clique em **Chutar**.
 - Se acertar, o botão **Chutar** ficará desabilitado até você clicar em **Tentar novamente**, que sorteia um novo número.
 - Validação básica impede entradas fora do intervalo ou vazias.
 
-## Contribuição
+## Detalhes da Calculadora de IMC
 
-Pull requests são bem-vindos. Para mudanças simples, faça um fork, crie uma branch, aplique as alterações e abra um PR.
+- Local: `IMC/imc.html` (script: `IMC/js/imc.js`).
+- Entradas: **Altura em centímetros** (ex.: `180`) e **Peso em kg** (ex.: `70.5`).
+- Formato: o campo de altura aceita valores inteiros entre `30` e `999` (até 3 dígitos). O peso aceita valores até 3 dígitos na parte inteira e casas decimais.
+- Uso: informe altura em cm e peso em kg e clique em **Calcular**. O resultado aparece na própria página.
+- Exemplo: altura `180` cm e peso `70.5` kg → IMC ≈ `21.76` (Eutrofia / peso normal).
+- Botões: **Calcular** executa a validação e o cálculo; **Limpar** reseta os campos.
+
+Observações:
+- Os cálculos convertem a altura (cm) para metros internamente antes de calcular o IMC (m = cm / 100).
+- Há validação de entrada no front-end para evitar valores fora do intervalo e limitar dígitos.
 
 ## Licença
 
 Veja o arquivo `LICENSE` na raiz do repositório.
 
 ---
-
-Se quiser, posso:
-- Mover estilos embutidos para arquivos CSS separados.
-- Adicionar instruções para executar com `live-server` (npm) ou Docker.
-- Melhorar README com badges e instruções de contribuição detalhadas.
-
-Diga qual opção prefere.
